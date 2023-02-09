@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<hmtl lang="es" xmlns: th="https://www.thymeleaf.org">
+
+	<head>
+		<meta charset="UTF-8">
+		<title>Thymeleaft</title>
+		<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+			integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+	</head>
+
+	<body>
+		<div class="container">
+		<h2 style="color:orange">Editar Usuario</h2>
+		<br>
+			<form th:action="@{/Ctrl/update}" method="post" th:object="${adea}">
+				<div class="mb-3">
+					<label for="id" class="form-label">id</label>
+					<input type="number" class="form-control" name="id" th:field="*{id}">
+				</div>
+				<div class="mb-3">
+					<label for="cliente" class="form-label">Cliente</label>
+					<input type="text" class="form-control" name="cliente" th:field="*{cliente}">
+				</div>
+				<div class="mb-3">
+					<label for="apellido_paterno" class="form-label">apellido_paterno</label>
+					<input type="text" class="form-control" name="apellido_paterno" th:field="*{apellido_paterno}">
+				</div>
+				<div class="mb-3">
+					<label for="apellido_materno" class="form-label">apellido_materno</label>
+					<input type="text" class="form-control" name="apellido_materno" th:field="*{apellido_materno}">
+				</div>
+				<div class="mb-3">
+					<label for="email" class="form-label">Email</label>
+					<input type="text" class="form-control" name="email" th:field="*{email}">
+				</div>
+				<div class="mb-3">
+					<label for="fechaalta" class="form-label">fechaalta</label>
+					<input type="date" class="form-control" name="fechaalta" th:field="*{fechaalta}">
+				</div>
+				<div class="mb-3">
+					<label for="fechabaja" class="form-label">fechabaja</label>
+					<input type="date" class="form-control" name="fechabaja"th:field="*{fechabaja}" >
+				</div>
+				<div class="mb-3">
+					<label for="status" class="form-label">status</label>
+					<input type="text" class="form-control" name="status" th:field="*{status}">
+				</div>
+				<div class="mb-3">
+					<label for="fecha_revocado" class="form-label">fecha_revocado</label>
+					<input type="date" class="form-control" name="fecha_revocado" th:field="*{fecha_revocado}">
+				</div>
+				<div class="mb-3">
+					<label for="fecha_vigencia" class="form-label">fecha_vigencia</label>
+					<input type="date" class="form-control" name="fecha_vigencia" th:field="*{fecha_vigencia}">
+				</div>
+				<div class="mb-3">
+					<label for="area" class="form-label">area</label>
+					<input type="text" class="form-control" name="area" th:field="*{area}">
+				</div>
+				<div class="mb-3">
+					<label for="fechamodifucacion" class="form-label">fecha Modifucacion</label>
+					<input type="date" class="form-control" name="fechamodifucacion" th:field="*{fechamodifucacion}">
+				</div>
+				
+				
+				<button type="submit" class="btn btn-primary">Editar</button>
+			</form>
+		</div>
+		
+		
+		
+		<!-- ppoper -->
+		<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"
+			integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p"
+			crossorigin="anonymous"></script>
+		<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"
+			integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p"
+			crossorigin="anonymous"></script>
+		<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+			integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+			crossorigin="anonymous"></script>
+		
+	</body>
+
+	</html>
